@@ -51,6 +51,13 @@ if(!message) {
     messageInput.nextElementSibling.textContent='';
     messageInput.classList.add('success-border');
   }
+  // if all fields are valid, submit the form 
+  if(firstName && lastName && emailPattern.test(email) && message) {
+    alert('Form submitted successfully!');
+  } else {
+    alert('Please fill in all required fields correctly.');
+  }
+//  reset the form  
   form.reset();
- alert('Form submitted successfully!');
+
 })
