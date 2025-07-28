@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Application Form</title>
+</head>
+<body>
+ 
+   <div class="container">
+    <h1>Application form</h1>
+    <form id="contact-form" >
+      <div class="form-item">
+      <div class="first-name">
+        <label for="first-name">first name*</label>
+        <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" >
+        <div class="error"></div>
+      </div>
+    </div>
+    <div class="form-item">
+      <div class="last-name">
+        <label for="last-name">last name*</label>
+        <input type="text" name="last-name" id="last-name" placeholder="Enter your last name">
+        <div class="error"></div>
+      </div>
+    </div>
+    <div class="form-item">
+      <div class="form-email">
+        <label for="email">email*</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <div class="error"></div>
+      </div>
+    </div>
+    <div class="form-item">
+      <div class="form-message">
+        <label for="message">reason for applying*</label>
+        <textarea name="message" id="message" rows="4"></textarea>
+        <div class="error"></div>
+      </div>
+    </div>
+    <button type="submit" class="btn" >submit</button>
+    </form>
+  </div>
+  
+   
+  <script src="app.js"></script>
+</body>
+</html>
