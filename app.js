@@ -16,10 +16,13 @@ form.addEventListener('submit', (e)=> {
 if(!firstName) {
     firstNameInput.classList.add('error-border');
     firstNameInput.nextElementSibling.textContent='First name is required';
+
   }else{
-    firstNameInput.classList.remove('error-border');
+     firstNameInput.classList.remove('error-border');
     firstNameInput.nextElementSibling.textContent='';
-    firstNameInput.classList.add('success-border');
+    // firstNameInput.classList.add('success-border');
+   
+    
   }
 if(!lastName) {
     lastNameInput.classList.add('error-border');
@@ -27,7 +30,7 @@ if(!lastName) {
   }else{
     lastNameInput.classList.remove('error-border');
     lastNameInput.nextElementSibling.textContent='';
-    lastNameInput.classList.add('success-border');
+    // lastNameInput.classList.add('success-border');
   }
   // validate email
   const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -37,7 +40,7 @@ if(!emailPattern.test(email)) {
   }else{
     emailInput.classList.remove('error-border');
     emailInput.nextElementSibling.textContent='';
-    emailInput.classList.add('success-border');
+    // emailInput.classList.add('success-border');
   }
   // validate message
 if(!message) {
@@ -49,5 +52,5 @@ if(!message) {
     messageInput.classList.add('success-border');
   }
   form.reset();
- 
+ alert('Form submitted successfully!');
 })
